@@ -1,0 +1,44 @@
+.body {
+  
+  width: 100%;
+}
+.btn {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #39739D;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  background: #E1ECF4;
+  border: 1px solid #7AA7C7;
+  border-radius: 3px;
+ 
+}
+.divBtn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 12px;
+  width: 70%;
+}
+
+.jogo > img {
+  width: 20%;
+}
+
+.btnStart {
+  width: 200px;
+  height: 60px;
+  background: #27AE60;
+  border-radius: 8px; 
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px; 
+  color: #FFFFFF;
+  border: none;
+}
