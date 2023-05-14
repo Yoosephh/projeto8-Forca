@@ -6,7 +6,6 @@ import "./css/index.css"
 export default function Botao({ setPalavra, setMaskWord, setEscolhidas, setIndexAtual, setGameState}){
 
     function StartGame(){
-
         setGameState("maskWord")
         setEscolhidas([])
         setIndexAtual(0)
@@ -17,6 +16,6 @@ export default function Botao({ setPalavra, setMaskWord, setEscolhidas, setIndex
     }
     
     return(
-        <button onClick={() => StartGame()} className="btnStart">Escolher palavra</button> 
+        <button onClick={() => StartGame()} data-test="choose-word" className="btnStart">Escolher palavra</button> 
     )
 }

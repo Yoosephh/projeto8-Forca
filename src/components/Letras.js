@@ -143,6 +143,7 @@ export default function Letras({
         onClick={() => verificaLetra(letter, index)}
         className={letrasEscolhidas.includes(letter) ? "selecionado" : "btn"}
         disabled={letrasEscolhidas.includes(letter) ? true : false}
+        data-test="letter"
       >
         {letter.toUpperCase()}
       </button>

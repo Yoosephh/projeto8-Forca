@@ -15,14 +15,14 @@ export default function Jogo({palavraEscolhida, setPalavra, maskWord, setMaskWor
   "./assets/forca6.png",
 ];
   
-  let img = <img className="forca" src={imgs[indexAtual]} alt={indexAtual}></img>;
+  let img = <img data-test="game-image" className="forca" src={imgs[indexAtual]} alt={indexAtual}></img>;
 
   return (
     <div className="jogo"> 
       {img}
       <div className="containerBtn">
         <Botao maskWord={maskWord} setMaskWord={setMaskWord} palavraEscolhida={palavraEscolhida} setPalavra={setPalavra} setEscolhidas={setEscolhidas}  setIndexAtual={setIndexAtual} setGameState={setGameState}/>
-        <h1 className={gameState}>{maskWord}</h1>
+        <h1 data-test="word" className={gameState}>{maskWord}</h1>
       </div>
     </div>
   );
