@@ -1,6 +1,7 @@
 import React from "react";
 import Jogo from "./Jogo";
 import Letras from "./Letras";
+import palavras from "../palavras";
 
 export default function App() {
   const [gameState, setGameState] = React.useState("maskWord")

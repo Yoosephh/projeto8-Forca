@@ -59,7 +59,7 @@
   align-items: flex-end;
   margin-right: 5%;
 }
-.maskWord {
+.maskWord, .ganhou, .perdeu {
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 700;
@@ -68,19 +68,10 @@
 }
 .ganhou {
   color: #27AE60;
-  font-family: 'Noto Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 68px;
+
 }
 .perdeu {
   color: #FF0000;
-  font-family: 'Noto Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 68px;
 }
 
 
@@ -108,5 +99,8 @@
 @media (max-width: 700px){
   .divBtn{
     width: 75%;
+  }
+  .maskWord, .perdeu, .ganhou {
+    font-size: 25px;
   }
 }
